@@ -1,0 +1,489 @@
+body{
+    margin: 0px;
+    background-color: rgb(13, 13, 41);
+    color: rgb(239, 234, 234);
+    overflow: hidden;
+}
+header{
+    display: flex;
+    background-color: rgb(13, 13, 41);
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    margin: 0px;
+    width: 100%;
+    z-index: 20;
+}
+/* #gaana-div{
+    display: inline-block;
+} */
+#gaana-favourite-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    width: 35%;
+}
+#gaana-studio-group{
+    display: flex;
+    align-items: center;
+}
+#gaana-studio-group h2{
+    color: white;
+}
+#music-div img{
+    width: 80px;
+    height: 80px;
+}
+#favourite-div a{
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+}
+#favourite-a::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background: purple;
+    transition: width .5s;
+}
+#favourite-a:hover::after{
+    width: 100%;
+    transition: width .5s;
+}
+nav{
+    position: relative;
+    /* background-color: aqua; */
+    width: 45%;
+}
+nav ul{ 
+    /* background-color: burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: none;
+    list-style: none;
+}
+#search{
+    position: relative;
+    /* background-color: aquamarine; */
+    display: inline-block;
+    width: 230px;
+}
+#search-input{
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    padding-left: 45px;
+    background-color: #1b122f;
+    outline: none;
+    border: 1px solid #390c45 ;
+    border-radius: 20px;
+    width: 180px;
+}
+#search-input::placeholder{
+    color: rgb(255, 255, 255);
+}
+#search-icon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#microphone-icon{
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+}
+#notification-icon{
+    width: 40px;
+    height: 40px;
+}
+#profile-img{
+    width: 60px;
+    height: 60px;
+}
+
+                                                    /* Main */
+main{
+    display: flex;
+    /* background-color: aqua; */
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    font-family: monospace;
+}
+main h3{
+    color: white;
+}
+#main-section{
+    width: 70%;
+    height: 700px;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    /* background-color: #390c45; */
+    margin-top: 20px;
+} 
+#main-section::-webkit-scrollbar{
+    display: none;
+}
+                                        /* Main section header */
+#main-section-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    height: auto;
+}
+
+#main-section-header img{
+    width: 250px;
+    height: 250px;
+}
+                                    /* Latest release song section */
+#latest-release-song{
+    margin-top: 40px;
+    height: auto;
+    /* background-color: rgb(21, 152, 36); */
+}
+#latest-release-song #inner{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    /* background-color: #690432; */
+}
+#inner .part{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    /* background-color: aqua; */
+}
+.part-1{
+    width: 40%;
+    /* background-color: black; */
+    height: auto;
+}
+.part-2{
+    /* display: flex;
+    align-items: center; */
+    width: 55%;
+    height: auto;
+    /* background-color: cadetblue; */
+    position: relative;
+}
+.part-2 p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.part-1 img{
+    width: 80%;
+    height: 100px;
+}
+.part-2 .option{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 80%;
+}
+                                /* Popular artist section */
+#popular-artist{
+    height: auto;
+    /* background-color: chocolate; */
+    margin-top: 40px;
+}
+
+#popular-artist-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+#popular-artist-inner img{
+    width: 120px;
+    height: 120px;
+}
+#popular-artist-inner p{
+    text-align: center;
+    /* background-color: aqua; */
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    padding: 0px;
+    cursor: pointer;
+}
+#popular-artist-inner #shreya_ghoshal{
+    width: 100%;
+}
+#popular-artist-inner #jonita{
+    width: 100%;
+}
+#popular-artist-inner p::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background: #aa24cf;
+    transition: width .5s;
+}
+#popular-artist-inner p:hover::after{
+    width: 100%;
+    transition: width .6s;
+}
+                                    /* Music Station */
+
+#stations{
+    margin-top: 40px;
+    height: auto;
+    min-height: 150px;
+    background-color: rgb(19, 15, 69);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#stations div{
+    position: relative;
+}
+#stations img{
+    /* border: 1px solid white; */
+    /* border-radius: 50%; */
+    /* background-color: #2dcf24; */
+    height: 90px;
+    width: 90px;
+    opacity: .5;
+}
+#music-station-outer{
+    background-color: rgb(255, 242, 0);
+    height: 80px;
+    width: 120px;
+    z-index: 1;
+    position: relative;
+}
+#music-station-inner-1{
+    background-color: rgba(255, 255, 0, 0.883);
+    height: 60px;
+    width: 140px;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+#music-station-inner-2{
+    background-color: rgb(216, 151, 12);
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    position: absolute;
+    left: 20px;
+    top: -20px;
+}
+#music-station-inner-2 img{
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+#stations span{
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+#workout span{
+    left:14px;
+}
+
+                                            /* Mood */
+#mood{
+    margin-top: 40px;
+    /* background-color: #bb66d2; */
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#mood div{
+    width: 32%;
+    height: 150px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+#mood #first{
+    background-image: linear-gradient(rgba(235, 36, 139, 0.63),rgba(167, 255, 60, 0.52)) , url("party.jpg")  ;
+    background-position: center;
+    background-size: contain;
+}
+#mood #second{
+    background-image: linear-gradient(rgba(53, 172, 199, 0.53),rgba(193, 94, 248, 0.51)) , url("electronic.jpg")  ;
+    background-position: center;
+    background-size:cover;
+}
+#mood #third{
+    background-image: linear-gradient(rgba(106, 72, 226, 0.76),rgba(28, 132, 148, 0.68)) , url("roadtrip.jpg")  ;
+    background-position: center;
+    background-size:cover;
+}
+
+                                            /* Latest english song */
+
+#latest-english-song{
+    height: auto;
+    /* background-color: aqua; */
+    margin-top: 50px;
+}
+#latest-english-song-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+#latest-english-song-inner img{
+    width: 140px;
+    height: 110px;
+}
+#latest-english-song-inner p{
+    margin: 0px;
+    margin-top: 2px;
+    color: rgba(255, 255, 255, 0.54);
+}
+                                                /* Latest hindi song */
+
+#latest-hindi-song{
+    height: auto;
+    /* background-color: aqua; */
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+#latest-hindi-song-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#latest-hindi-song-inner img{
+    width: 140px;
+    height: 110px;
+}
+#latest-hindi-song-inner p{
+    margin: 0px;
+    margin-top: 2px;
+    color: rgba(255, 255, 255, 0.54);
+}
+
+
+                                            /* Side section */
+
+#side-section{
+    width: 30%;
+    height: 670px;
+    /* background-color:#390c45; */
+    margin-left: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    font-family: monospace;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+#side-section::-webkit-scrollbar{
+    display: none;
+}
+#side-section h1{
+    margin: 0px;
+    margin-left: 10px;
+    display: inline-block;
+}
+#side-section-header{
+    background-color:rgb(13, 13, 41);
+    /* opacity: .5; */
+    height: 60px;
+    position: fixed;
+    width: 25%;
+    z-index: 20;
+}
+#dropdown-outer{
+    position: relative;
+}
+#dropdown{
+    position: absolute;
+    right: 20px;
+    top:-25px;
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #390c45; */
+    font-size: 15px;
+    font-weight: 500;
+    color:skyblue
+    /* margin: 0px; */
+}
+#dropdown img{
+    width: 30px;
+    height: 30px;
+}
+/* Music list */
+
+#music-list{
+    /* background-color: rgb(10, 88, 66); */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* margin-top: 50px; */
+    /* margin-bottom: 60px; */
+    position: relative;
+    top: 90px;
+}
+.music-list-inner{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #aa24cf; */
+}
+.div-part-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 23%;
+}
+.div-part-1 img{
+    width: 50px;
+    height: 50px;
+}
+.div-part-2{
+    width: 70%;
+    position: relative;
+}
+.div-part-2 p{
+    margin: 0px;
+    color: rgb(255, 255, 255);
+}
+.div-part-2 p:nth-of-type(even){
+    color:rgba(255, 255, 255, 0.348);
+}
+.div-part-2 img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    /* background-color: white; */
+}
