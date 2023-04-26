@@ -95,7 +95,7 @@ nav ul{
     left: 10px;
 }
 #microphone-icon{
-    width: 20px;
+    width: 24px;
     height: 30px;
     position: absolute;
     top: 3px;
@@ -325,17 +325,17 @@ main h3{
     color: white;
 }
 #mood #first{
-    background-image: linear-gradient(rgba(235, 36, 139, 0.63),rgba(167, 255, 60, 0.52)) , url("party.jpg")  ;
+    background-image: linear-gradient(rgba(235, 36, 139, 0.63),rgba(167, 255, 60, 0.52)) , url("useful_img/party.jpg")  ;
     background-position: center;
     background-size: contain;
 }
 #mood #second{
-    background-image: linear-gradient(rgba(53, 172, 199, 0.53),rgba(193, 94, 248, 0.51)) , url("electronic.jpg")  ;
+    background-image: linear-gradient(rgba(53, 172, 199, 0.53),rgba(193, 94, 248, 0.51)) , url("useful_img/electronic.jpg")  ;
     background-position: center;
     background-size:cover;
 }
 #mood #third{
-    background-image: linear-gradient(rgba(106, 72, 226, 0.76),rgba(28, 132, 148, 0.68)) , url("roadtrip.jpg")  ;
+    background-image: linear-gradient(rgba(106, 72, 226, 0.76),rgba(28, 132, 148, 0.68)) , url("useful_img/roadtrip.jpg")  ;
     background-position: center;
     background-size:cover;
 }
